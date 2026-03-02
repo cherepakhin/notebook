@@ -16,7 +16,7 @@ CRUD приложение использует spring-boot-starter-web и templa
 
 ![Редактирование записи](doc/notebook_edit.png)
 
-![На телефоне](doc/notebook_mobile.jpg)
+![На телефоне](doc/notebook_mobile_50.jpg)
 
 ### Сборка и запуск приложения
 
