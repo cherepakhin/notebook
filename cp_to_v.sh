@@ -1,0 +1,1 @@
+scp ~/prog/java/themleaf/notebook/target/notebook-0.0.1.jar vasi@v:/home/vasi/po

@@ -1,0 +1,16 @@
+[Unit]
+Description=notebook
+Wants=network-online.target
+After=network-online.target
+[Service]
+Type=simple
+User=vasi
+Group=vasi
+ExecReload=/bin/kill -HUP
+ExecStart=/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java -jar target/notebook-0.0.1.jar
+SyslogIdentifier=notebook
+StandardOutput=file:/var/log/notebook.stdout.log
+StandardError=file:/var/log/notebook.stderr.log
+Restart=always
+[Install]
+WantedBy=multi-user.target

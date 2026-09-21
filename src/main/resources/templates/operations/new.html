@@ -7,7 +7,7 @@
 <div class="container">
     <div th:replace="fragments/header :: header"></div>
     <div class="container">
-        <form class="form-horizontal" th:action="@{/save}" name="input_form" id="input_form"
+        <form class="form-horizontal" th:action="@{/notebook/save}" name="input_form" id="input_form"
               method="post" role="form">
             <div class="form-group">
                 <input type="text" class="form-control" id="message" th:name="message" placeholder="Enter your note." maxlength="100"/>

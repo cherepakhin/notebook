@@ -10,6 +10,7 @@ import org.surplus.radolf.Notebook.entity.Note;
 import org.surplus.radolf.Notebook.service.NoteService;
 
 @Controller
+@RequestMapping("/notebook")
 public class NoteController {
 
     private NoteService service;
@@ -21,7 +22,7 @@ public class NoteController {
         this.service = service;
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public String list(Model model, Pageable pageable) {
         Page<Note> notePage = filterAndSort(pageable);
         PageWrapper<Note> page = new PageWrapper<Note>(notePage, "/");

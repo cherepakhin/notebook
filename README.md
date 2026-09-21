@@ -2,7 +2,7 @@
 
 Проект не мой, скачал откуда-то.
 
-CRUD приложение использует spring-boot-starter-web и template __Thymeleaf__. 
+CRUD приложение использует spring-boot-starter-web и template __Thymeleaf__ и базу данных __MySQL__. 
 Данные хранятся в базе MySQL, обмен проходит 
 с помощью query-запросов и организует фильтрацию, сортировку по значениям, 
 регулируемую с помощью элементов управления в пользовательском интерфейсе.
@@ -22,6 +22,10 @@ CRUD приложение использует spring-boot-starter-web и templa
 
 Используется Java 8.
 
+````shell
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+````
+
 Сборка:
 ````shell
 ./mvnw clean package
@@ -35,7 +39,7 @@ CRUD приложение использует spring-boot-starter-web и templa
 /usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/java -jar target/Notebook-0.0.1-SNAPSHOT.jar
 ````
 
-Открыть [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+Открыть [http://127.0.0.1:8990/](http://127.0.0.1:8990/)
 
 ### Ссылки
 - [Material CSS materializecss.com](https://materializecss.com/buttons.html)
