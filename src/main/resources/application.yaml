@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://v:3306/notebook?useSSL=false
+    username: vasi
+    password: pass
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+
+server:
+  port: 8990
+  forward-headers-strategy: NATIVE
+  servlet:
+    context-path: /
